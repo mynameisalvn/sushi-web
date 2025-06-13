@@ -1,0 +1,77 @@
+.menu {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.menu__food,
+.menu__drinks {
+  width: 100%;
+  min-height: 640px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.menu__content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 32px 64px;
+}
+
+.menu__list {
+  list-style: none;
+  flex-wrap: wrap;
+
+  gap: 20px;
+}
+
+.menu__list li {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 12px;
+
+  min-width: 400px;
+}
+
+.menu__list h4 {
+  flex: 1;
+  font-family: var(--plus-jakarta-sans);
+}
+
+.menu__list p {
+  flex: 1;
+  font-family: var(--plus-jakarta-sans);
+}
+
+.menu__image {
+  flex: 1;
+
+  position: relative;
+  padding: 32px 45px;
+  background-color: var(--color-white);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.menu__food .menu__image {
+  background-image: url("../../assets/japanese_sushi.png");
+}
+
+.menu__drinks .menu__image {
+  background-image: url("../../assets/japanese_drinks.png");
+}
+
+.menu__image img {
+  width: 550px;
+  height: 500px;
+  object-fit: contain;
+}
