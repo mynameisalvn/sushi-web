@@ -20,3 +20,20 @@
   border-radius: 12px;
   object-fit: cover;
 }
+
+.gallery__img-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* was 250px */
+  gap: 2rem; /* more space between */
+  padding: 2rem 1rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .gallery__img-grid {
+    grid-template-columns: 1fr; /* One image per row on small screens */
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+}

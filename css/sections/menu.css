@@ -75,3 +75,36 @@
   height: 500px;
   object-fit: contain;
 }
+
+@media (max-width: 768px) {
+  .menu__food,
+  .menu__drinks {
+    flex-direction: column; /* Stack vertically */
+  }
+
+  .menu__content {
+    padding: 16px; /* Reduce padding */
+  }
+
+  .menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .menu__list li {
+    flex-direction: column; /* Stack text under title */
+    align-items: flex-start;
+    min-width: auto; /* Override 400px min-width */
+    width: 100%;
+  }
+
+  .menu__image {
+    padding: 16px;
+  }
+
+  .menu__image img {
+    width: 100%;
+    height: auto;
+  }
+}
